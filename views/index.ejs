@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="angularDemoApp">
+<head>
+  <title>{{$root.header}}</title>
+
+  <link rel="stylesheet" type="text/css" href="javascripts/css/bootstrap.css">
+</head>
+
+<body  >
+  <div id="main">
+
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+
+  </div>
+  <script src="javascripts/assets/angular.js"></script>
+  <script src="javascripts/assets/angular-route.min.js"></script>
+  
+  <script src="javascripts/js/app.js"></script>
+  <script src="javascripts/js/services/directorService.js"></script>
+  
+  <script src="javascripts/js/controllers/directorController.js"></script>
+</body>
+</html>

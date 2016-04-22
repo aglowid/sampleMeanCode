@@ -1,0 +1,25 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th >Name</th>
+        <th >Sex</th>
+        <th >Nationality</th>
+        <th >City</th>
+        <th >DOB</th>
+        <th >Age</th>
+        <th >Blockbuster</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr ng-click="getDirectorInfo(director._id)" ng-repeat="director in directors">        
+        <td>{{director.name}}</td>
+        <td>{{director.sex}}</td>
+        <td>{{director.nationality}}</td>
+        <td>{{director.city}}</td>
+        <td>{{director.dob | date:'dd/MM/yyyy'}}</td>
+        <td>{{director.age}}</td>
+        <td>{{director.blockbuster}}</td>
+      </tr>
+    </tbody>
+  </table>

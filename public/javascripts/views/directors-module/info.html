@@ -1,0 +1,67 @@
+<div class="container">
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >   
+   
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{selectedDirector.name}}</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> 
+                  
+                  <div>
+                    <a href="#/directors" type="button" class="btn btn-sm btn-warning">Back</a>
+                  </div>
+                </div>
+                
+                <div class=" col-md-9 col-lg-9 "> 
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td>Nationality:</td>
+                        <td>{{selectedDirector.nationality}}</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>City:</td>
+                        <td>{{selectedDirector.city}}</td>
+                      </tr>
+                   
+                      
+                      <tr>
+                        <td>Sex:</td>
+                        <td>{{selectedDirector.sex}}</td>
+                      </tr>
+                      <tr>
+                        <td>Date of Birth:</td>
+                        <td>{{selectedDirector.dob | date:'dd/MM/yyyy'}}</td>
+                      </tr>
+                      <tr>
+                        <td>Age:</td>
+                        <td>{{selectedDirector.age}}</td>
+                      </tr>
+
+                      <tr>
+                        <td>Blockbusters</td>
+                        <td>
+                          {{selectedDirector.blockbuster}}
+                        </td>
+                      </tr>
+
+                           
+                      
+                     
+                    </tbody>
+                  </table>
+                  
+                </div>
+              </div>
+            </div>
+                 
+            
+          </div>
+        </div>
+      </div>
+    </div>
